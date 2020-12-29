@@ -1,0 +1,23 @@
+.body {
+    width: 100%;
+    height: calc( 100vh - 80px);
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    background-color: #333;
+}
+
+.video__wrapper {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.video__wrapper video {
+    height: 100%;
+    outline: none;
+}

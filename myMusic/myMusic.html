@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../logo.ico">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1796518_xl6j06eowop.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="myMusic.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.js"></script>
+    <title>余音</title>
+</head>
+
+<body>
+    <div class="head">
+        <div class="head__logo">
+            <a href="../index.html">LingeringVoice余音</a>
+        </div>
+        <div class="head__navList">
+            <nav class="head__nav">
+                <ul>
+                    <li><a href="../musicList/musicList.html">歌单</a></li>
+                    <li><a href="../ranking/ranking.html">榜单</a></li>
+                    <li><a href="../videoList/videoList.html">MV</a></li>
+                    <li><a href="../newMusic/newMusic.html">新碟</a></li>
+                    <li><a href="../singerList/singerList.html">歌手</a></li>
+                    <li><a href="../ticketing/ticketing.html">票务</a></li>
+                    <li><a href="../myMusic/myMusic.html" class="active my">我的</a></li>
+                    <!-- <li><a href="">app</a></li> -->
+                </ul>
+            </nav>
+            <nav class="head__login">
+                <ul>
+                    <li>
+                        <input type="text" name="" id="" placeholder="音乐/视频/电台/用户" class="searchText">
+                        <i class="iconfont icon-fangdajing searchBtn"></i>
+                    </li>
+                    <li class="notLogin">
+                        <a href="../login/login.html"><button class="loginBtn">登录</button></a>
+                    </li>
+                    <li class="userInfo">
+                        <img src="../img/img_4.jpg" alt="" class="avatar">
+                        <ul class="info">
+                            <li>个人设置</li>
+                            <li class="signOut">退出登录</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="body">
+        <div class="ranking__wrapper">
+            <div class="ranking__body">
+                <div class="ranking__list">
+                    <div class="ranking__title">我的歌单</div>
+                    <hr>
+                    <ul class="ranking__name">
+                        <li class="active">我喜欢</li>
+                    </ul>
+                    <div class="ranking__title">收藏歌单</div>
+                    <hr>
+                    <ul>
+                        <li>学习专属音乐歌单</li>
+                    </ul>
+                </div>
+                <div class="ranking__music">
+                    <div class="ranking__title">歌曲列表</div>
+                    <div class="ranking__more">
+                        <a href="../songList/songList.html?Listid=3778678">更多</a></div>
+                    <hr>
+                    <ul class="music__list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script src="../js/util.js"></script>
+    <script src="../js/commen.js"></script>
+    <script src="./myMusic.js"></script>
+</body>
+
+</html>

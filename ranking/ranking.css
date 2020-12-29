@@ -1,0 +1,83 @@
+.ranking__wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.title h2 {
+    color: #666;
+    padding: 20px 0 0;
+    font-size: 34px;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ranking__body {
+    padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #666;
+}
+
+.ranking__title {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.ranking__list {
+    margin-top: 20px;
+    width: 15vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 14px;
+    /* background-color: #333; */
+    padding: 20px;
+}
+
+.ranking__name {
+    color: #666;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.ranking__name li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.ranking__name li:hover {
+    color: rgb(100, 211, 255);
+}
+
+.ranking__name li.active {
+    color: rgb(100, 211, 255);
+}
+
+.ranking__music {
+    margin-top: 20px;
+    width: 55vw;
+    background-color: white;
+    border-radius: 14px;
+    /* background-color: #333; */
+    padding: 20px;
+    position: relative;
+}
+
+.ranking__music .ranking__title {
+    top: 0;
+    height: 30px;
+}
+
+.ranking__music .ranking__more {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.ranking__music .ranking__more:hover {
+    color: rgb(100, 211, 255);
+}

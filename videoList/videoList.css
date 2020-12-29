@@ -1,0 +1,50 @@
+.list__wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.list__title {
+    color: #666;
+    padding: 20px 0 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.list__more {
+    font-size: 14px;
+}
+
+.list__body {
+    padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 18em;
+    text-align: center;
+}
+
+.card img {
+    width: 17em;
+    height: 10em;
+}
+
+.card__img .play {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    opacity: 0;
+    border-radius: 4px;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,86 @@
+.picWrap {
+    width: 100%;
+    padding: 1vw 0 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pic {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.picWrap button {
+    display: flex;
+    height: 20vh;
+    line-height: 20vh;
+    width: 5vw;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    color: #666;
+    opacity: .1;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.picWrap button:hover {
+    background-color: #ccc;
+}
+
+.picWrap button i {
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.pic__inner {
+    width: 300%;
+    height: 36vw;
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+
+.pic__inner li {
+    width: 80vw;
+    height: 100%;
+}
+
+.pic__inner li img {
+    width: 100%;
+}
+
+.pic__dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    opacity: .2;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+}
+
+.pic__dots span {
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pic__dots span.active {
+    background-color: rgb(100, 211, 255)
+}
+
+.picWrap:hover * {
+    opacity: 1;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../logo.ico">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1796518_yrqpgrw7wcm.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../player/player.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.js"></script>
+    <link rel="icon" href="../logo.ico">
+    <title>余音</title>
+</head>
+
+<body>
+
+    <div class="player">
+        <div class="player__wrapper">
+            <a href="../index.html">
+                <h1 class="player__logo">LingeringVoice余音</h1>
+            </a>
+            <div class="music__card">
+                <img src="" alt="">
+            </div>
+            <div class="music__info">
+                <h2 class="name"></h2>
+                <div class="info">
+                    <em> 歌手：<span class="singer">歌手</span></em>
+                    <em> 所属专辑：<span class="album">所属专辑</span></em>
+                </div>
+                <hr>
+                <div class="text">
+                </div>
+            </div>
+            <div class="play">
+                <div class="player__btnList">
+                    <i class="iconfont icon-rewind-left"></i>
+                    <i class="iconfont icon-play-circle playMusicBtn"></i>
+                    <i class="iconfont icon-rewind-right"></i>
+                </div>
+                <div class="player__progBar">
+                    <div class="info">
+                        <span class="name"></span> -
+                        <span class="singer"></span>
+                    </div>
+                    <div class="date">
+                        <span class="now">00:00</span> /
+                        <span class="max">05:00</span>
+                    </div>
+                    <div class="bar">
+                        <div><i></i></div>
+
+                    </div>
+                </div>
+                <div class="player__btnListR">
+                    <i class="iconfont icon-repeat"></i>
+                    <i class="iconfont icon-heart"></i>
+                    <i class="iconfont icon-message-circle"></i>
+                    <i class="iconfont icon-volume-up"></i>
+                    <div class="bar">
+                        <div><i></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="#" id="music"></audio>
+    <div class="loading__wrap">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <script src="../js/util.js"></script>
+    <script src="player.js"></script>
+
+</body>
+
+</html>

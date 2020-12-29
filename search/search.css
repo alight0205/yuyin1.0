@@ -1,0 +1,28 @@
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.search__wrapper {
+    width: 90vw;
+    height: 100%;
+    background-color: white;
+    margin: 40px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.music__list {
+    top: 0;
+}
+
+.search__title {
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    background-color: #f4f4f4;
+}
+
+.search__more {
+    font-size: 14px;
+}

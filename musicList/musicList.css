@@ -1,0 +1,24 @@
+.list__wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.list__title {
+    color: #666;
+    padding: 20px 0 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.list__more {
+    font-size: 14px;
+}
+
+.list__body {
+    padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,83 @@
+.body {
+    width: 100%;
+    background-color: #333;
+}
+
+.head {
+    background-color: #333;
+}
+
+.concert__wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.concert__title h2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 24px;
+    color: #999;
+}
+
+.music__body,
+.concert__body {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+    margin-top: 30px;
+}
+
+.music__body li,
+.concert__body li {
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 100%;
+    line-height: 30px;
+    display: flex;
+    color: white;
+}
+
+.music__body li span,
+.concert__body li span {
+    flex: 1;
+    padding: 0 10px;
+    word-wrap: break-word;
+}
+
+.music__body li.title,
+.concert__body li.title {
+    border-bottom: 1px solid;
+}
+
+.music__body li span.name,
+.concert__body li span.name {
+    flex-grow: 2;
+}
+
+.music__body li span.btn,
+.concert__body li span.btn {
+    text-align: right;
+}
+
+.music__body li button,
+.concert__body li button {
+    border-style: none;
+    width: 100px;
+    height: 2.3em;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(100, 211, 255, .6);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.music__body li button:hover,
+.concert__body li button:hover {
+    background-color: rgb(100, 211, 255);
+}

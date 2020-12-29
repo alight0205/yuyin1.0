@@ -1,0 +1,48 @@
+.info__wrap {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.title {
+    color: #666;
+    padding: 20px 0 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.info__body {
+    height: 400px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px 50px;
+}
+
+.info__body li {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.info__body li input,
+.info__body li textarea {
+    line-height: 1.5em;
+    width: 300px;
+    border-style: none;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 2px #999;
+    outline: none;
+    padding: 4px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    resize:none
+}
+
+.info__body li input {
+    height: 24px;
+}
+
+.info__body li textarea {
+    vertical-align: top;
+}

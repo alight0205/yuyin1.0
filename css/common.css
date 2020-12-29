@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+.body {
+    position: relative;
+    margin-top: 80px;
+    background-color: #f4f4f4;
+}
+
+hr {
+    height: 4px;
+    margin: 1em 0;
+    border: none;
+    background-color: rgb(100, 211, 255);
+}
+
+i.iconfont {
+    flex-basis: 50px;
+    font-size: 22px;
+    color: #999;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.card {
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    position: relative;
+    width: 14em;
+}
+
+.card__img {
+    position: relative;
+    cursor: pointer;
+}
+
+.card__img img {
+    width: 14rem;
+    height: 14rem;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.card__img:hover img {
+    transform: scale(1.05);
+}
+
+.card__img .play {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    top: -8px;
+    bottom: -8px;
+    left: -8px;
+    right: -8px;
+    opacity: 0;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__img .play i {
+    font-size: 60px;
+    padding: 10px;
+    color: white;
+    transition: .3s;
+}
+
+.card__img .play i:hover {
+    color: rgb(100, 211, 255);
+}
+
+.card__img:hover .play {
+    opacity: 1;
+}
+
+.card .title {
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card .user {
+    font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card .num {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card .title {
+    cursor: pointer;
+}
+
+.card .title:hover {
+    color: rgba(78, 177, 216, 0.8);
+}
+
+.card .more {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+.music__list {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.music__list a {
+    color: #999;
+}
+
+.music__list li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+    display: flex;
+}
+
+.music__list .title:first-child span {
+    color: black;
+}
+
+.music__list li a:hover {
+    color: rgb(100, 211, 255);
+}
+
+.music__list li span {
+    padding: 0 5px;
+    box-sizing: border-box;
+    width: 22%;
+    overflow: hidden;
+    color: #666;
+}
+
+.music__list li span.name {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.music__list li span.time {
+    width: 10%;
+}
+
+.music__list li span.name a {
+    flex-grow: 1;
+    width: 300px;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.music__list li span.name .icon {
+    display: none;
+}
+
+.music__list li span.name:hover .icon {
+    display: block;
+}
+
+.music__list li span:nth-child(1) {
+    flex-grow: 0;
+    width: 60px;
+}
+
+.music__list li:nth-of-type(2n-1) {
+    background-color: #eee;
+}
+
+.music__list i:hover {
+    color: rgb(100, 211, 255);
+}
+
+.footer {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/img_4.jpg");
+    background-position: center;
+    position: relative;
+}
+
+.footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+
+/* 设置滚动条的样式 */
+
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+}
+
+.loading__wrap ::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* 滚动槽 */
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+
+/* 滚动条滑块 */
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.loading__wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: .5s;
+}
+
+.loading {
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.loading span {
+    display: inline-block;
+    width: 8px;
+    height: 100%;
+    border-radius: 4px;
+    background: lightgreen;
+    animation: load 1.04s ease infinite;
+}
+
+@keyframes load {
+    0%,
+    100% {
+        height: 40px;
+        background: lightgreen;
+    }
+    50% {
+        height: 60px;
+        margin-top: -20px;
+        background: lightblue;
+    }
+}
+
+.loading span:nth-child(2) {
+    animation-delay: 0.13s;
+}
+
+.loading span:nth-child(3) {
+    animation-delay: 0.26s;
+}
+
+.loading span:nth-child(4) {
+    animation-delay: 0.39s;
+}
+
+.loading span:nth-child(5) {
+    animation-delay: 0.52s;
+}
