@@ -66,7 +66,7 @@ async function getNewMusicList(num) {
   const url = `http://47.97.6.61:11148/top/album?offset=0&limit=${num}`;
   const resp = await fetch(url);
   const data = await resp.json();
-  return data.albums;
+  return data;
 }
 //发送验证码
 async function setCaptcha(phone) {
@@ -95,7 +95,6 @@ async function getLogin(phone, pass) {
   const url = `http://47.97.6.61:11148/login/cellphone?phone=${phone}&password=${pass}`;
   const resp = await fetch(url);
   const data = await resp.json();
-  console.log(data);
   debugger;
   return data;
 }
@@ -153,7 +152,6 @@ async function getSearchData(Keyword, type) {
   const url = `http://47.97.6.61:11148/search?keywords=${Keyword}&type=${type}&limit=20`;
   const resp = await fetch(url);
   const data = await resp.json();
-  console.log(data);
   return data;
 }
 

@@ -20,7 +20,7 @@ searchBtn.onclick = function () {
     if (!searchInp.value) {
         return;
     }
-    console.log(window.location.protocol)
+    // 服务器加/余音
     window.location.replace(window.location.protocol + `/search/search.html?searchData=${searchInp.value}`)
 }
 // 回车搜索
