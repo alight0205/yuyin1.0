@@ -62,11 +62,11 @@ async function getMvUrl(id) {
   return data.data;
 }
 // 新碟上架
-async function getNewMusicList(num) {
-  const url = `http://47.97.6.61:11148/top/album?offset=0&limit=${num}`;
+async function getNewMusicList() {
+  const url = `http://47.97.6.61:11148/top/song?type=0`;
   const resp = await fetch(url);
   const data = await resp.json();
-  return data;
+  return data.data;
 }
 //发送验证码
 async function setCaptcha(phone) {

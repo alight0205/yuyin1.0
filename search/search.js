@@ -13,7 +13,6 @@ async function initSearchData(Keyword) {
         return;
     }
     const musicData = data.result.songs;
-    console.log(musicData[0])
     let index = 1;
     for (let i = 0; i < musicData.length; i++) {
         let singer = '';

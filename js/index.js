@@ -108,18 +108,16 @@ const newMusicId = 3779629; //云音乐新歌榜
 const domMusicList = document.getElementsByClassName('newMusic__list')[0];
 //  加载音乐
 async function initMusicList() {
-    let newMusicList = await getNewMusicList(5);
-    for (let i = 0; i < newMusicList.length; i++) {
-
+    let newMusicList = await getNewMusicList();
+    for (let i = 0; i < 5; i++) {
         let singer = '';
         for (let j = 0; j < newMusicList[i].artists.length; j++) {
             singer += '/' + newMusicList[i].artists[j].name
         }
         singer = singer.substr(1)
-
         let str = `<li class="card">
         <div class="card__img">
-            <img src="${newMusicList[i].blurPicUrl}" alt="">
+            <img src="${newMusicList[i].album.blurPicUrl}" alt="">
             <a href="./player/player.html?musicId=${newMusicList[i].id}">
                 <div class="play"><i class="iconfont icon-iconfontplay"></i></div>
             </a>
