@@ -11,14 +11,14 @@ async function getSingerInfo(id) {
 
 // 返回歌单信息
 async function getMusicListInfo(id) {
-  const url = `https://api.imjad.cn/cloudmusic/?type=playlist&id=${id}&limit=20`;
+  const url = `http://47.97.6.61:11148/playlist/detail?id=${id}&limit=20`;
   const resp = await fetch(url);
   const data = await resp.json();
   return data.playlist;
 }
 // 返回歌单中歌曲id
 async function getMusicListId(id) {
-  const url = `https://api.imjad.cn/cloudmusic/?type=playlist&id=${id}`;
+  const url = `http://47.97.6.61:11148/playlist/detail?id=${id}`;
   const resp = await fetch(url);
   const data = await resp.json();
   const musicList = Array.from(data.playlist.trackIds).map(function (item) {
@@ -28,28 +28,35 @@ async function getMusicListId(id) {
 }
 // 返回歌曲信息
 async function getMusicInfo(id) {
-  const url = `https://api.imjad.cn/cloudmusic/?type=detail&id=${id}`;
+  const url = `http://47.97.6.61:11148/song/detail?ids=${id}`;
   const resp = await fetch(url);
   const data = await resp.json();
   return data.songs[0];
 }
 // 返回歌曲mp3地址
 async function getMusic(id) {
-  const url = `https://api.imjad.cn/cloudmusic/?type=song&id=${id}`;
+  const url = `http://47.97.6.61:11148/song/url?id=${id}`;
   const resp = await fetch(url);
   const data = await resp.json();
   return data.data[0];
 }
 //返回歌词信息
 async function getMusicLyrics(id) {
-  const url = `https://api.imjad.cn/cloudmusic/?type=lyric&id=${id}`;
+  const url = `http://47.97.6.61:11148/lyric?id=${id}`;
   const resp = await fetch(url);
   const data = await resp.json();
   return data.lrc && data.lrc.lyric;
 }
 //返回mv信息
 async function getMvData(id) {
-  const url = `https://api.imjad.cn/cloudmusic/?type=mv&id=${id}`;
+  const url = `http://47.97.6.61:11148/mv/detail?mvid=${id}`;
+  const resp = await fetch(url);
+  const data = await resp.json();
+  return data.data;
+}
+//返回mvurl
+async function getMvUrl(id) {
+  const url = `http://47.97.6.61:11148/mv/url?id=${id}`;
   const resp = await fetch(url);
   const data = await resp.json();
   return data.data;
