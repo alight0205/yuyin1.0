@@ -2,11 +2,12 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 80px;
+    min-height: 80px;
     padding: 0 10vw;
     box-sizing: border-box;
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     font-size: 14px;
     font-weight: bold;
     color: #888;
@@ -35,6 +36,7 @@
 .head__navList {
     display: flex;
     flex-grow: 1;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -74,6 +76,7 @@
 
 .head__login ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .head__login ul li {
@@ -88,14 +91,12 @@
     transition: all .2s;
     cursor: pointer;
     position: absolute;
-    right: 0;
+    top: 2px;
+    right: 16px;
 }
 
 .head__login input {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    margin-top: 20px;
     width: 200px;
     height: 30px;
     border: 1px solid rgb(100, 211, 255);
@@ -139,7 +140,7 @@
     vertical-align: middle;
     border-radius: 50%;
     margin-top: -10px;
-    box-shadow: 0px 0px 4px #999;
+    box-shadow: 2 2 4px #999;
     cursor: pointer;
 }
 .head__login .userInfo:hover .info{
@@ -157,7 +158,7 @@
     font-weight: 100;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 4px #999;
+    box-shadow: 2 2 4px #999;
     display: none;
     transition: .3s;
 }

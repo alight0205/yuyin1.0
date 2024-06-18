@@ -16,7 +16,6 @@ function move() {
     setDot();
     picUl.style.transition = 'left .5s';
     picUl.style.left = -index * 80 + 'vw';
-
 }
 
 function setDot() {

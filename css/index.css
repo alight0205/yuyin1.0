@@ -154,6 +154,22 @@ body {
     height: 1.5em;
     line-height: 2em;
 }
+@media screen and (max-width:400px) {
+    .hotsong li .music_info img {
+        display: none;
+    }
+    .hotsong li .music_info .info .name {
+        font-size: 14px;
+        height: 1.5em;
+        line-height: 2em;
+    }
+
+    .hotsong li .music_info .info .singer {
+        font-size: 12px;
+        height: 1.5em;
+        line-height: 2em;
+    }
+}
 
 .hotsong li i.icon-heart:hover {
     color: red;

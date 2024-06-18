@@ -56,9 +56,6 @@ async function setMusicInfo(id) {
     oPlaySinger.innerText = singer;
 
     // 初始化歌词
-    /**
-     * 思路：
-     */
     let lyricsData = await getMusicLyrics(id);
 
     lyricsData = lyricsData || "[00:00.00]暂无歌词"
